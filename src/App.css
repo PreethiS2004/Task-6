@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #0c0c0c;
+  padding: 10px;
+  text-align: right;
+}
+
+
+.nav-button {
+  background-color: #333;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-button:hover {
+  background-color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section {
+  padding: 40px;
+  text-align: center;
+  flex: 1;
 }
+h1{
+  font-size: 80px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: black;
+  
+}
+#home {
+
+  background: linear-gradient(to right,rgb(240, 233, 15),rgb(180, 221, 180));
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+img{
+  border-radius: 70%;
+  width: 25%;
+  height:45%;
+}
+#about{
+  
+  background-color: aquamarine;
+}
+#skills{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  background-color:darkblue;
+  color: whitesmoke;
+}
+#skills ul {
+  list-style: none; /* Remove the default list styles (dots) */
+  padding: 0; /* Remove any default padding for the list */
+}
+
+#skills ul li {
+  margin: 10px 0; /* Add margin between skills */
+}
+
+.navbar-brand{
+  text-align: left;
+}
+
+.logo {
+  position: relative;
+  top: 5px;
+  left: 7px;
+  width: 70px; /* Set the width of your logo */
+  height: auto; /* Maintain aspect ratio */
+   /* Add some spacing between logo and brand text */
+}
+
+.brand-text {
+  position: relative;
+  right: 10px;
+  font-size: 1.6rem; /* Set font size for the brand text */
+  font-weight: bold; /* Optionally set font weight */
+  color: white; /* Set color for the brand text */
+}
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 30px;
+}
+
+.contact-icons a:hover {
+  color: #4CAF50;
+}
+
+
